@@ -1,0 +1,125 @@
+/*një katror që e bën ekranin si të padisponueshëm*/
+.forma{
+    display: none;/*nuk shfaqet deri sa të shtypet butoni*/
+    position: fixed;/*pozicioni është i fiksuar*/
+    z-index: 5;/*është një 3 ose 4 lart duhet të jetë sipër tij*/
+    left: 0;
+    top: 0; /*fillon majtas lart*/
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #333;
+    background-color:rgba(0, 0, 0, 0.4);/*E bën të duket si e pa disponueshëm*/
+
+}
+
+.forma_p{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    margin-top: 100px;
+    overflow: auto;
+    border: 1px solid #888;
+    border-radius: 25px;/*Heq cepat e katrorit  */
+    width: 80%;
+}
+
+.mblidh{
+    display: flex;
+    
+    
+    flex-direction: column;
+   
+    
+  
+}
+.mblidh .rr_h{
+    
+    background-color: rgb(240, 226, 226);
+    width: 100%;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #3a3838;
+    text-align: center;
+    
+
+}
+
+.mblidh .rr_h .hyr{
+    padding: 16px;
+    width: 50%;
+    font-weight: bold;
+    background-color: rgba(155, 148, 148, 0.712);
+    border: solid 1px;
+}
+.mblidh .rr_h .rreg{
+    padding: 16px;
+    width: 50%;
+    border: solid 1px;
+}
+.mblidh .rr_h div:hover{
+font-weight: bold;
+background-color: rgba(155, 148, 148, 0.712);
+cursor: pointer;
+}
+
+
+
+
+.mblidh .r_info
+{
+    display: none;
+}
+.mblidh .h_info
+{
+    display: block;
+}
+
+
+ .mblidh .info{
+     
+     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mblidh .info span{
+    
+    padding-top: 10px;
+    padding: 5px;
+    margin-left: 45px;
+    align-self: flex-start;
+   font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+   
+    width: 50%;
+
+   
+}
+
+.mblidh .info span label{
+    padding-top: 8px;
+  
+  }
+.mblidh .info input{
+    padding: 6px;
+    align-self: center;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+.mblidh .info .btn:hover{
+   cursor: pointer;
+   background-color: rgb(66, 66, 66);
+
+}
+
+.mblidh .info .btn{
+    
+    background-color:#9e9e9e
+ 
+ }

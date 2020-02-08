@@ -1,0 +1,209 @@
+.kategori
+{
+    width: 100%;
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #333;
+    justify-content: space-around;
+}
+
+.kategori .kat{
+    text-decoration: none;/*heq nenvizimet standarte te linqeve*/
+    font-size: 1.12em;
+    display: flex;
+    justify-content: center;
+    color:#f2f2f2; 
+    cursor: pointer;
+    width: auto;
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+  
+}
+.kategori .kat:hover{
+    background-color: #14af2e;/*Kur vendoset maus-i sipër ndryshon ngjyre 'containeri i a'*/
+    color: #000000ee;/*ndryshon ngjyren e tekstit te 'containerit'*/
+}
+
+.mbështjell{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+   
+}
+
+.mbështjell .brenda{
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  
+    height: 250px;
+    flex-direction: row;
+   
+    
+
+}
+.mbështjell .brenda a
+{
+   
+   
+    height: 100%;
+    background-color: black;
+    min-width: 150px;
+    max-width: 250px;
+
+
+}
+.mbështjell .brenda a img
+{
+    width:100%;
+    height:100%;
+
+}
+.mbështjell .brenda .pjesa
+{
+    background-color: bisque;
+    margin-left: 10px;
+    width: 75%;
+    height: 100%;
+    overflow: auto;
+    min-width: 300px;
+    margin-top: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mbështjell .brenda a
+{
+   background: transparent;
+}
+.mbështjell .brenda .pjesa .karta
+{
+    bottom:0;
+
+}
+
+
+@media screen and (max-width:600px)/*Për ekrane më të vogla se 600px*/
+{
+    .mbështjell{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+       
+    }
+  .mbështjell .brenda{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  }
+  .mbështjell .brenda .pjesa{
+    margin: 0;
+    margin-top: 5px;
+    min-width: 300px;
+    max-width: 350px;
+
+}
+}
+.mbështjell .brenda .pjesa a:hover{
+  background-color: #14af2e;
+  color:black;
+
+}
+
+.mbështjell .brenda .pjesa a{
+    font-size: 20px;
+    color:green;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+  
+  }
+
+  .brenda .shporta{
+      display:flex;
+      width: 90%;
+      flex-direction: row;
+      flex-wrap: wrap;
+     margin-bottom: 0px;
+      margin-left: 20px;
+     margin-top: 0px;
+      
+      background-color: #fff;
+      padding: 10px;
+      border-top: solid 1px;
+      border-bottom: solid 1px;
+      
+  }
+.brenda .shporta .pro{
+    flex-grow: 1;
+    width: 50px;
+}
+.pro button{
+    border:none;background:transparent;color:red";
+}
+.pro button i:hover{
+    background-color: red;
+    color:black;
+    cursor: pointer;
+}
+
+.pro button  .jeshil:hover{
+    background-color: green;
+    color:black;
+    cursor: pointer;
+}
+.brenda .totali
+{
+    display:flex;
+    width: 69%;
+    flex-direction: row;
+    flex-wrap: wrap;
+   margin-top:10px;
+    margin-left: 20px;
+ 
+   justify-content: flex-end;
+   font-weight: bold;
+   font-size: 22px;
+}
+
+.brenda .pagesa
+{
+    display:flex;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:10px;
+    margin-left: 20px;
+ 
+   justify-content: flex-end;
+   font-weight: bold;
+   font-size: 22px;
+}
+.brenda .pagesa .pag
+{
+    padding: 20px;
+    color: white;
+    background-color: #14af2e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brenda .pagesa .pag:hover
+{
+   
+    background-color: #07851c;
+    color: rgb(230, 221, 221);
+    cursor: pointer;
+    
+}

@@ -1,0 +1,60 @@
+.kinema{
+    width: 100%;
+    position: relative;
+    
+    margin-top: 20px;
+   display: flex;
+    justify-content: center;
+   
+    height: 200px;
+    
+}
+.kinema .frama{
+    display: none;
+   
+    height: 160px;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(41, 40, 40, 0.8);
+    overflow: hidden;
+}
+
+.frama .im{
+    width:120px;
+    max-width: 100px;
+    min-width: 95px;
+    max-height: 150px;
+    /*margin-left: 5px;
+    margin-right: 5px;*/
+    margin: 5px;
+    height:auto;
+   
+}
+
+.para,.pas{
+ cursor: pointer;
+ position: absolute;
+ top:50%;
+ width: auto;
+ padding: 16px;
+ margin-top: -22px;
+ color: white;
+ font-weight: bold;
+ font-size: 18px;
+ user-select: none; /*Teksti nuk mund te selektohet*/
+
+
+}
+.pas{
+    right:0;
+   /* margin-right: 10px;*/
+
+}
+.para
+{
+    left: 0;
+}
+.para:hover, .pas:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
